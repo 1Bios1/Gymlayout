@@ -1,0 +1,48 @@
+
+.basement {
+
+    padding: 5vmax;
+    background-color: rgb(36, 36, 36);
+
+    &__container {
+        display: flex;
+        gap: 2vmax;
+        flex-flow: column nowrap;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        width: 20%;
+
+        @media (width <= 700px) {
+            width: 50%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 3vmax;
+        font-family: Rubik;
+        color: white;
+        font-weight: 100;
+        font-size: 1vmax;
+    }
+
+    &__location {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1vmax;
+    }
+
+    &__contact {
+        display: flex;
+        gap: 1vmax;
+        flex-flow: column wrap;
+    }
+
+   
+
+}

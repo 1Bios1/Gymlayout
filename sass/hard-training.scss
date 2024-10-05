@@ -1,0 +1,86 @@
+@import url('./fonts.scss');
+
+.hard-training {
+    width: 100%;
+    height: 50vmax;
+    overflow: hidden;
+
+    &__container {      
+        width: 100%;
+        height: 100%;
+        padding: 6vmax;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 3vmax;
+        align-items: center;
+        background: url('../assets/beast-bg.svg') center / 100vmax auto no-repeat;
+        
+    }
+
+    &__description {
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        flex-flow: column wrap;
+        gap: 2vmax;
+
+        @media (width <= 700px) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 3vmax;
+        }
+    }
+
+    &__title {
+        font-size: 6vmax;
+        color: white;
+        font-family: Oswald;
+
+        @media (width <= 700px) {
+            font-size: 7vmax;
+        }
+
+        @media (width <= 475px) {
+            font-size: 5vmax;
+        }
+    }
+
+    &__text {
+        width: 91%;
+        font-size: 1.5vmax;
+        color: white;
+        font-family: Sawarabi Gothic;
+
+        @media (width <= 700px) {
+            width: 100%;
+            font-size: 1.5vmax;
+        }
+
+        @media (width <= 475px) {
+            width: 100%;
+            font-size: 1.2vmax;
+        }
+    }
+
+    &__btn {
+        width: 20%;
+        padding: 1vmax;
+        font-size: 1.3vmax;
+        background-color: #FFD479;
+        border-radius: 8px;
+        font-family: Oswald;
+        letter-spacing: 0.3vmax;
+
+        @media (width <= 700px) {
+            width: 80%;
+            font-size: 1.5vmax;
+            padding: 1.3vmax;
+        }
+    }
+
+
+
+
+}

@@ -1,0 +1,114 @@
+@import url('./fonts.scss');
+
+.training-form {
+
+    background: url('../assets/contact-bg.svg') center / 130vmax auto no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vmax 18vmax;
+    overflow: hidden;
+
+    @media (width <= 1000px) {
+        padding: 5vmax 15vmax;
+    }
+
+    @media (width <= 700px) {
+        padding: 3vmax 10vmax;
+    }
+
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5vmax;
+        width: 100%;
+        overflow: hidden;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        font-family: Oswald;
+        font-size: 3vmax;
+        color: #FFD479;
+
+        @media (width <= 1000px) {
+            font-size: 6vmax;
+        }
+
+        @media (width <= 700px) {
+            font-size: 4vmax;
+        }
+    }
+
+    &__form {
+        display: flex;
+        gap: 3vmax;
+        flex-flow: column nowrap;
+    }
+
+    .form {
+
+        &__title {
+            font-size: 1.25vmax;
+            font-family: Rubik;
+            margin-bottom: 1vmax;
+
+            @media (width <= 1000px) {
+                font-size: 2vmax;
+            }
+
+            @media (width <= 700px) {
+                font-size: 2vmax;
+            }
+        }
+
+        &__line {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        &__data-input {
+            padding: 0.2vmax;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        &__btn {
+            display: flex;
+
+            @media (width <= 700px) {
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        &__btn-submit {
+            background-color: #FFD479;
+            padding: 2vmax;
+            border-radius: 10px;
+            letter-spacing: 0.3vmax;
+            font-family: Oswald;
+            color: black;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            font-family: Rubik;
+            padding: 0.5vmax;
+            font-size: 1.20vmax;
+        }
+        
+        textarea {
+            font-family: Rubik;
+            resize: vertical;
+            max-height: 100px;
+            min-width: 100%; 
+            min-height: 50px; 
+        }
+    }    
+}
+
+
+

@@ -1,0 +1,47 @@
+@import url('./null.scss');
+@import url('./header.scss');
+@import url('./couchers.scss');
+@import url('./hard-training.scss');
+@import url('./training-courses.scss');
+@import url('./training-form.scss');
+@import url('./basement.scss');
+
+
+.wrapper {
+    display: grid;
+
+    grid-template-areas: 
+        'siteHeader siteHeader'
+        'siteContent siteContent';
+
+    grid-template-rows: 55vmax 60vmax;
+    
+    @media (width <= 900px) {
+        grid-template-rows: 90vmax 100vh;
+    }
+
+    @media (width <= 700px) {
+        grid-template-rows: 90vmax 100vh;
+    }
+
+    min-height: 100vh;
+}
+
+.menu {
+    grid-area: siteHeader;
+    background: url('../assets/hero-bg.svg') center right / 110vmax auto  no-repeat;
+
+    @media (width <= 900px) {
+        background: url('../assets/hero-bg.svg') center / 180vmax auto  no-repeat;
+    }
+
+    @media (width <= 700px) {
+        background: url('../assets/hero-bg.svg') center / 180vmax auto  no-repeat;
+    }
+}
+
+.content {
+    grid-area: siteContent;
+    background-color: rgb(36, 36, 36);
+}
+
