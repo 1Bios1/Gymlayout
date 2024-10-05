@@ -72,6 +72,12 @@
         border-radius: 8px;
         font-family: Oswald;
         letter-spacing: 0.3vmax;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-5%);
+            text-shadow: 0px 0px 30px white;
+        }
 
         @media (width <= 700px) {
             width: 80%;
